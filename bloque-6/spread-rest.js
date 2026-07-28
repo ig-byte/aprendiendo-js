@@ -60,7 +60,7 @@ const frutas = ["manzana", "banana"];
 // Esperado: ["kiwi", "manzana", "banana", "uva"]
 
 // Escribe tu código aquí ↓
-const expandido = ["kiwi",...frutas,"banana"];
+const expandido = ["kiwi",...frutas,"uva"];
 
 
 console.log(expandido);
@@ -224,7 +224,7 @@ const nuevoProducto = { id: 3, nombre: "Leche", precio: 800 };
 const carritoActualizado = [...carritoInicial,nuevoProducto];
 
 
-const carritoConDescuento = carritoActualizado.map((item) => 
+const carritoConDescuento = carritoInicial.map((item) => 
         item.id === 2
             ? { ...item, precio: 400}
             : item
